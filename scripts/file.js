@@ -1,4 +1,4 @@
-const { dialog } = require('electron').remote
+const { app, dialog } = require('electron').remote
 var fs = require('fs');
 
 let title = document.getElementById("title");
@@ -157,3 +157,7 @@ function LoadByPath(path) {
 }
 
 LoadByPath("default");
+
+function Quit() {
+    app.quit();
+}

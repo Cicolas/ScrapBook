@@ -10,10 +10,11 @@ require('electron-reload')(__dirname, {
 function createWindow() {
     // Cria uma janela de navegação.
     const win = new BrowserWindow({
+        titleBarStyle: 'customButtonsOnHover',
         width: 800,
-        height: 600,
+        height: 650,
         resizable: false,
-        frame: true,
+        frame: false,
         transparent: true,
         backgroundColor: "#00000000",
         nodeIntegration: false, // is default value after Electron v5

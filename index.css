@@ -2,6 +2,39 @@ body {
     font-family: 'Fredoka One', cursive;
     padding: 0px;
     margin: 0px;
+}
+
+#desktopBar {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 20px;
+}
+
+#dragableArea {
+    background-color: #0fc3f0;
+    -webkit-app-region: drag;
+}
+
+#xButton {
+    transition-duration: 200ms;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #1b1c27;
+    color: #ffffff;
+}
+
+#xButton:hover {
+    transition-duration: 200ms;
+    background-color: #f00f0f;
+}
+
+#main {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 50px 500px;

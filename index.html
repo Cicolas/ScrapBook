@@ -12,25 +12,33 @@
 </head>
 
 <body>
-    <div id="navBarTitle">
-        <i>Recent</i>
+    <div id="desktopBar">
+        <div id="dragableArea"></div>
+        <button id="xButton" onclick="Quit()">
+            X
+        </button>
     </div>
-    <i>
-    <div id="title">Note 1</div>
-    </i>
-    <div id="navBar">
-        <button class="navButton" onclick="LoadByNumber(0)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(1)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(2)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(3)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(4)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(5)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(6)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(7)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(8)"></button></br>
-        <button class="navButton" onclick="LoadByNumber(9)"></button>
+    <div id="main">
+        <div id="navBarTitle">
+            <i>Recent</i>
+        </div>
+        <i>
+        <div id="title">Note 1</div>
+        </i>
+        <div id="navBar">
+            <button class="navButton" onclick="LoadByNumber(0)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(1)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(2)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(3)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(4)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(5)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(6)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(7)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(8)"></button></br>
+            <button class="navButton" onclick="LoadByNumber(9)"></button>
+        </div>
+        <textarea id="note" spellcheck="false"></textarea>
     </div>
-    <textarea id="note" spellcheck="false"></textarea>
 
     <script type="text/javascript" src="scripts/setRecent.js"></script>
     <script type="text/javascript" src="scripts/file.js"></script>
