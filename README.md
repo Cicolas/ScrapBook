@@ -1,3 +1,3 @@
-# notepad
+# ScrapBook
 
 simple ScrapBook to make anotations...
